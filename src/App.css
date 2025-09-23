@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e2c8ce;
+}
+
+/* Main Container */
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 119, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logoText {
+    font-size: 18pt;
+    font-weight: bold;
+    color: #88787c;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background: rgb(190, 14, 14);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    color: rgb(18, 6, 6); /* Updated for visibility */
+}
+
+.btn:hover {
+    background: black;
+    color: rgb(143, 37, 37);
+}
+
+/* Gradient Buttons */
+.btn-gradient {
+    background: rgb(184, 24, 24);
+    color: rgb(110, 32, 32); /* Updated for visibility */
+    border: none;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #ff4d00, #ff9900);
+    transform: scale(1.05);
+}
+
+/* Outline Buttons */
+.btn-outline {
+    background: rgb(45, 34, 34);
+    border: 2px solid black;
+    color: rgb(239, 235, 235); /* Updated for visibility */
+}
+
+.btn-outline:hover {
+    background: black;
+    color: rgb(184, 24, 24); /* Updated for visibility */
+}
+
+/* Content Section */
+#content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('/pets-background.jpg') no-repeat center center/cover;
+    position: relative;
+    
+}
+
+.overlay {
+    background: rgba(241, 239, 239, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    color: rgb(233, 220, 220);
+    max-width: 600px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(246, 241, 241, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(237, 232, 232, 0.2);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(229, 226, 226, 0.5);
+    z-index: 1000;
+}
+
+/* Show Modal */
+.modal.active,
+.modal-overlay.active {
+    display: block;
+}
+
+/* Close Button */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ff4d4d;
+}
+
+.close-icon:hover {
+    color: #d11a2a;
+}
+
+/* Modal Input */
+.modal input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #ff7b00;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    height: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 -2px 4px rgb(225, 139, 0);
+    position: relative;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons.right-align {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.socialmediaIcon {
+    width: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.socialmediaIcon:hover {
+    transform: scale(1.1);
+}
+
+/* Modal Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -55%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

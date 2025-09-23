@@ -1,0 +1,133 @@
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.logoText span {
+  color: #fff;
+  font-weight: normal;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout {
+  height: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.logout:hover {
+  transform: scale(1.1);
+}
+
+.header label {
+  font-size: 16px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  background-color: #fdf2f2;
+  overflow: hidden; 
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #ffe3e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  height: calc(100vh - 70px);
+  position: sticky;
+  top: 70px;
+  overflow-y: auto;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  color: #222 !important;   /* ✅ ensure text is dark and visible */
+  font-weight: 600;         /* ✅ make it bolder */
+}
+
+
+.sidebar button:hover {
+  background-color: #ffb6ab;
+}
+
+.sidebar .active-btn {
+  background-color: #ff6f61;
+  color: #fff !important;  /* ✅ white text for active */
+  font-weight: bold;
+}
+
+
+/* Menu icons */
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* Menu text */
+.menu-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Right content */
+.outlet {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
