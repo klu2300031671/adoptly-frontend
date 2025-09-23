@@ -7,6 +7,7 @@ import Pets from "./Pets";
 import AdoptionForm from "./AdoptionForm";
 import Page from "./Page";
 import Contact from "./contact"; // ✅ Contact component import
+import PetPosting from "./PetPosting";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,6 +21,7 @@ root.render(
         <Route path="/page" element={<Page />} />
         <Route path="/adopt/:id" element={<AdoptionForm />} />
         <Route path="/contact" element={<Contact />} /> {/* ✅ New Contact Route */}
+        <Route path="/post-pet" element={<PetPosting />} />
       </Routes>
     </Router>
   </React.StrictMode>

@@ -3,4 +3,5 @@ export const routes = {
     pets: "/pets",
     petDetails: "/pets/:id",
     adoptPet: "/adopt/:id",
+    petPosting: "/post-pet",
 };
