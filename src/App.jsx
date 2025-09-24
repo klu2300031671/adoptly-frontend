@@ -170,7 +170,7 @@ function App() {
       <header id="header">
         <div className="logo">
           <img
-            src={`${import.meta.env.BASE_URL}PetAdopt.jpg`}
+            src={`${import.meta.env.BASE_URL}Pet Adopt.jpg`}
             alt="Adoptly Logo"
           />
           <div className="logoText">Adoptly</div>
